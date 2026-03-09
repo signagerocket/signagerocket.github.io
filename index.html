@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signage Rocket — Cloud Digital Signage Software</title>
+  <meta name="description" content="Cloud digital signage software for corporate lobbies, retail displays, and video walls. Schedule content, manage screens remotely, push updates in real time.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://signagerocket.github.io/">
+  <meta property="og:title" content="Signage Rocket — Cloud Digital Signage Software">
+  <meta property="og:description" content="Manage digital signage screens remotely. Schedule content, build playlists, push updates in real time. Cloud-hosted CMS with on-premise players.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://signagerocket.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Signage Rocket — Cloud Digital Signage Software">
+  <meta name="twitter:description" content="Cloud digital signage software for corporate lobbies, retail displays, and video walls.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Signage Rocket",
+    "url": "https://signagerocket.com",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, Windows, Linux",
+    "description": "Cloud digital signage software for corporate lobbies, retail displays, and video walls. Content scheduling, playlist management, and remote screen control.",
+    "author": {
+      "@type": "Organization",
+      "name": "Signage Rocket",
+      "url": "https://signagerocket.com",
+      "location": {
+        "@type": "Place",
+        "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" }
+      }
+    }
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0d1117;
+      color: #c9d1d9;
+    }
+    .container { text-align: center; padding: 2rem; max-width: 720px; width: 100%; }
+    .terminal {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .terminal-bar {
+      background: #21262d;
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot-r { background: #f85149; }
+    .dot-y { background: #d29922; }
+    .dot-g { background: #3fb950; }
+    .terminal-title { color: #484f58; font-size: 0.75rem; margin-left: 0.5rem; }
+    .terminal-body { padding: 1.25rem; font-size: 0.85rem; line-height: 1.6; min-height: 340px; }
+    .line { display: none; }
+    .line.visible { display: block; }
+    .prompt { color: #3fb950; }
+    .cmd { color: #c9d1d9; }
+    .typed-cmd { color: #c9d1d9; display: inline; }
+    .comment { color: #484f58; }
+    .string { color: #a5d6ff; }
+    .key { color: #d2a8ff; }
+    .val { color: #a5d6ff; }
+    .cursor {
+      display: inline-block; width: 8px; height: 14px;
+      background: #58a6ff; vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    .links {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+      opacity: 0; transition: opacity 0.5s;
+    }
+    .links.visible { opacity: 1; }
+    a {
+      color: #58a6ff; text-decoration: none; font-size: 0.9rem;
+      padding: 0.5rem 1rem; border: 1px solid #30363d; border-radius: 6px;
+      transition: all 0.2s;
+    }
+    a:hover { background: #161b22; border-color: #58a6ff; }
+    .status {
+      margin-top: 1.5rem; font-size: 0.75rem; color: #484f58;
+      opacity: 0; transition: opacity 0.5s;
+    }
+    .status.visible { opacity: 1; }
+    .status span { color: #3fb950; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Signage Rocket — Cloud Digital Signage Software</h1>
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <div class="terminal-title">bash — signagerocket.com</div>
+      </div>
+      <div class="terminal-body" id="term">
+        <div class="line" id="b1-prompt"><span class="prompt">rocket</span><span class="cmd">:</span><span class="string">~</span><span class="cmd">$ </span><span class="typed-cmd" id="b1-typed"></span><span class="cursor" id="b1-cursor"></span></div>
+        <div class="line" id="b1-r1"><span class="cmd">{</span></div>
+        <div class="line" id="b1-r2">&nbsp;&nbsp;<span class="key">"name"</span><span class="cmd">:</span> <span class="val">"Signage Rocket"</span><span class="cmd">,</span></div>
+        <div class="line" id="b1-r3">&nbsp;&nbsp;<span class="key">"url"</span><span class="cmd">:</span> <span class="val">"<a href="https://signagerocket.com" style="color:#a5d6ff;text-decoration:underline;text-underline-offset:3px;border:none;padding:0;font-size:inherit">signagerocket.com</a>"</span><span class="cmd">,</span></div>
+        <div class="line" id="b1-r4">&nbsp;&nbsp;<span class="key">"what"</span><span class="cmd">:</span> <span class="val">"Cloud digital signage software"</span><span class="cmd">,</span></div>
+        <div class="line" id="b1-r5">&nbsp;&nbsp;<span class="key">"features"</span><span class="cmd">:</span> <span class="val">["content scheduling", "video walls", "remote management", "real-time updates"]</span><span class="cmd">,</span></div>
+        <div class="line" id="b1-r6">&nbsp;&nbsp;<span class="key">"for"</span><span class="cmd">:</span> <span class="val">"Corporate lobbies, retail displays, hospitality, education"</span><span class="cmd">,</span></div>
+        <div class="line" id="b1-r7">&nbsp;&nbsp;<span class="key">"stack"</span><span class="cmd">:</span> <span class="val">["Node.js", "React", "PostgreSQL", "AWS", "Terraform"]</span></div>
+        <div class="line" id="b1-r8"><span class="cmd">}</span></div>
+        <div class="line" id="b1-blank">&nbsp;</div>
+
+        <div class="line" id="b2-prompt"><span class="prompt">rocket</span><span class="cmd">:</span><span class="string">~</span><span class="cmd">$ </span><span class="typed-cmd" id="b2-typed"></span><span class="cursor" id="b2-cursor"></span></div>
+        <div class="line" id="b2-r1"><span class="cmd">STATUS  OK</span></div>
+        <div class="line" id="b2-r2"><span class="comment">Screens managed: thousands. Content pushed: millions of updates.</span></div>
+        <div class="line" id="b2-r3"><span class="comment">London-based. Shipping digital signage software since 2015.</span></div>
+        <div class="line" id="b2-blank">&nbsp;</div>
+
+        <div class="line" id="final"><span class="prompt">rocket</span><span class="cmd">:</span><span class="string">~</span><span class="cmd">$ </span><span class="cursor"></span></div>
+      </div>
+    </div>
+    <div class="links" id="links">
+      <a href="https://signagerocket.com">signagerocket.com &rarr;</a>
+      <a href="mailto:support@signagerocket.com">support@signagerocket.com</a>
+    </div>
+    <div class="status" id="status"><span>&#x25CF;</span> Cloud digital signage — content scheduling, video walls &amp; remote screen management</div>
+  </div>
+
+  <script>
+    (function() {
+      var speed = 45;
+      var lineDelay = 80;
+      function show(id) { document.getElementById(id).classList.add('visible'); }
+      function type(elId, text, cursorId, cb) {
+        var el = document.getElementById(elId);
+        var i = 0;
+        var interval = setInterval(function() {
+          el.textContent += text[i]; i++;
+          if (i >= text.length) { clearInterval(interval); document.getElementById(cursorId).style.display = 'none'; setTimeout(cb, 300); }
+        }, speed);
+      }
+      function showLines(ids, cb) {
+        var i = 0;
+        function next() { if (i >= ids.length) { cb(); return; } show(ids[i]); i++; setTimeout(next, lineDelay); }
+        next();
+      }
+      setTimeout(function() {
+        show('b1-prompt');
+        type('b1-typed', 'cat product.json', 'b1-cursor', function() {
+          showLines(['b1-r1','b1-r2','b1-r3','b1-r4','b1-r5','b1-r6','b1-r7','b1-r8','b1-blank'], function() {
+            show('b2-prompt');
+            type('b2-typed', 'rocket status', 'b2-cursor', function() {
+              showLines(['b2-r1','b2-r2','b2-r3','b2-blank','final'], function() {
+                document.getElementById('links').classList.add('visible');
+                document.getElementById('status').classList.add('visible');
+              });
+            });
+          });
+        });
+      }, 500);
+    })();
+  </script>
+</body>
+</html>

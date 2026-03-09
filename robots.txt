@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://signagerocket.github.io/sitemap.xml
